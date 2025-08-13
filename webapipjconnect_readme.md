@@ -1,10 +1,10 @@
-# 📌 WebApiPJConnect
+# 🩷 WebApiPJConnect
 
 API para gerenciamento de empresas, usuários e dados corporativos, desenvolvida em **.NET 8** com **Entity Framework Core** e arquitetura em camadas (**Domain**, **Application**, **Infra.Data**, **API**).
 
 ---
 
-## 🚀 Funcionalidades
+## 🧠 Funcionalidades
 
 - **Empresas**
   - Criar nova empresa
@@ -83,7 +83,7 @@ Acesse:
 
 ---
 
-## 📌 Exemplos de Uso
+## 🤓☝🏻 Exemplos de Uso
 
 ### Criar Empresa
 
