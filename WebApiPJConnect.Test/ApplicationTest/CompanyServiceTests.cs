@@ -1,4 +1,4 @@
-﻿using FluentAssertions;
+using FluentAssertions;
 using Moq;
 using WebApiPJConnect.Application.DTOs.Companies;
 using WebApiPJConnect.Application.Services;
@@ -22,6 +22,7 @@ namespace WebApiPJConnect.Tests.Application
                 .Returns(Task.CompletedTask);
 
             var svc = new CompanyService(repo.Object);
+             /*dataset da compania*/
 
             var req = new CreateCompanyRequestDto
             {
@@ -61,7 +62,7 @@ namespace WebApiPJConnect.Tests.Application
                 Number = "1",
                 City = "SP",
                 State = "SP",
-                ZipCode = "01001000",
+                ZipCode = "01001000", /*codigo postal da compania*/
                 Type = CompanyType.MEI
             };
 
