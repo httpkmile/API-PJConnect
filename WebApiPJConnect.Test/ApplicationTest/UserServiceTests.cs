@@ -1,4 +1,4 @@
-﻿using FluentAssertions;
+using FluentAssertions;
 using Moq;
 using WebApiPJConnect.Application.DTOs.Users;
 using WebApiPJConnect.Application.Services;
@@ -23,10 +23,10 @@ namespace WebApiPJConnect.Tests.Application
                 .ReturnsAsync((Guid _, CompanyUser u, CancellationToken __) => u);
 
             var svc = new UserService(repo.Object);
-
+              /*perfil exemplo pra realização da query*/
             var req = new AddUserRequestDto { Name = "Ana", Cpf = "52998224725", Profile = UserProfile.Agencia };
             var res = await svc.AddUserAsync(companyId, req, CancellationToken.None);
-
+             /*conferencia de ID*/
             res.Should().NotBeNull();
             res!.Name.Should().Be("Ana");
             repo.VerifyAll();
